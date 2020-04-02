@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <header>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
     <h1>Pangolin</h1>
-    <nav>
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
         <li><a href="#description">Description</a></li>
         <li><a href="#behaviour">Behaviour</a></li>
@@ -16,25 +22,23 @@
     </nav>
   </header>
 
-  <main>
-    <section id="description" tabindex="0">
+  <main role="main" id="main" tabindex="0">
+    <section id="description">
       <h2>Description</h2>
     </section>
 
-    <section id="behaviour" tabindex="0">
+    <section>
       <h2>Behaviour</h2>
     </section>
 
-    <section id="conservation" tabindex="0">
+    <section>
       <h2>Conservation</h2>
     </section>
   </main>
 
-
-  <footer>
+  <footer role="contentinfo">
     <small>© 1821 Pangolin</small>
   </footer>
 
-
-  </body>
+</body>
 </html>
